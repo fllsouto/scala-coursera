@@ -179,6 +179,7 @@ if(false) 1 else 4 * factorial(4 - 1)
 4 * (3 * (2 * (1 * (if(true) 1 else 0 * factorial(0 - 1)))))
 4 * (3 * (2 * (1 * (1))))
 24
+// ^---- crescimento da pilha
 ```
 
-Lec 1.7 - [4:27]
+Se uma função chamar a si mesma na ultima linha da sua definição o stack da função pode ser reaproveitado, isso é chamado **recursão de cauda**. No caso do gcd apenas sua chamada é executada, enquanto no factorial uma computação a mais precisa ser feita, que no caso é a multiplicação por **n**.
