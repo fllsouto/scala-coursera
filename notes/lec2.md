@@ -49,6 +49,13 @@ def f(args_1)...(args_n-1) = (args_n => E)
 //Repetindo o processo n vezes:
 def f = (args_1 => ... ((args_n => E)))
 
-//O nome desse processo é Currying
-
+//O nome desse processo é Currying, com essa técnica podemos transformar uma função de n parâmetros em n composições de 1 parâmetro
 ```
+
+Podemos definir a geradora de somatórias de uma forma mais clara, porém sem recursão de cauda:
+```
+def sum(f: Int => Int)(a: Int, b: Int): Int = 
+	if(a > b) 0 else f(a) + sum(f)(a + 1, b)
+```
+
+Começar 2.3
