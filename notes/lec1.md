@@ -1,4 +1,4 @@
-## Introdução a Programação Funcional com Scala
+# Introdução a Programação Funcional com Scala - Week 1
 
 ### Paradigma de programação
 Em ciência um paradigma descreve conceitos distintos ou padrões de pensamento em alguma disciplína científica.
