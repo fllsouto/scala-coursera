@@ -106,3 +106,11 @@ import nomedopackage.{NomeDaClasse1, NomeDaClasse2}
 import nomedopackage._
 ```
 
+## Traits
+Java e Scala são linguagem que aceitam apenas herança simples. Para contornar isso existe o conceito de **Trait**. Seu comportamente é similar as interfaces em Java, porém muito mais poderosas pois podem contar campos e metodos contretos.
+
+```
+class Square externs Shape with Planar with Movable ...
+```
+
+O tradeoff de traits é que elas não possuem parâmetros, apenas classes podem ter.
