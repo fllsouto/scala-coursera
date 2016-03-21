@@ -94,4 +94,15 @@ class NonEmpty(elem: Int, left: IntSet, right: IntSet) extends IntSet {
 }
 ```
 
-4.1 [18:39]
+### Dynamic method dispatch
+Linguagens orientadas a objeto comumente implementam o despache dinâmico de métodos, uma classe abstrata define um método, que é implementado por outras classes, onde cada um tem seu código proprio, a execução de cada trecho depende do tipo de objeto que o está chamando. Essa é a ideia central do **Polimorfismo**.
+
+## Packages e Imports
+Um arquivo pode ser empacotado dentro de um pacote utilizando a diretiva ```package <nome do package>``` e podemos importar outros packages da seguinte forma:
+
+```
+import nomedopackage.NomeDaClasse
+import nomedopackage.{NomeDaClasse1, NomeDaClasse2}
+import nomedopackage._
+```
+
